@@ -14,8 +14,10 @@
           <img src="../images/home2.png" alt="" />
         </div>
       </div>
-      <button class="btn btn-outline-primary btn-lg">Our Portfolio</button>
-      <router-link to="/about">Link</router-link>
+      <!-- <button class="btn btn-outline-primary btn-lg">Our Portfolio</button> -->
+      <router-link class="btn btn-outline-primary btn-lg" to="/about"
+        >About Us</router-link
+      >
     </div>
   </section>
 </template>

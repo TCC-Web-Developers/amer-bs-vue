@@ -9,8 +9,8 @@
           williamsburg kitsch beard.
         </p>
       </div>
-      <div class="row text-white text-center">
-        <div class="col-4">
+      <div class="row g-2 text-white text-center">
+        <div class="col-lg-4 col-md-6">
           <div class="card border border-2 rounded bg-secondary py-2">
             <img src="../images/service.png" class="card-img-top" />
             <div class="card-body">
@@ -23,7 +23,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card border border-2 rounded bg-secondary py-2">
             <img src="../images/service.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -36,7 +36,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card border border-2 rounded bg-secondary py-2">
             <img src="../images/service.png" class="card-img-top" alt="..." />
             <div class="card-body">
