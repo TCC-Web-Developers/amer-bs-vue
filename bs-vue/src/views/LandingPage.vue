@@ -1,62 +1,54 @@
-<script setup></script>
+<script setup>
+import baseButton from "../components/UI/base-button.vue";
+</script>
 
 <template>
-  <section class="land-page py-5 bg-dark">
+  <section class="land-page">
+    <div class="bg-color"></div>
     <div class="container">
-      <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-lg-6">
-          <h1 class="text-white">
-            <span class="text-warning">Creativity</span> in the eye of the
-            Beholder
-          </h1>
-        </div>
-        <div class="col-lg-6 d-none d-md-block">
-          <img src="../images/home2.png" alt="" />
-        </div>
-      </div>
-      <!-- <button class="btn btn-outline-primary btn-lg">Our Portfolio</button> -->
-      <router-link class="btn btn-outline-primary btn-lg" to="/about"
-        >About Us</router-link
+      <div
+        class="land-page-content text-white d-flex flex-column text-center align-items-center justify-content-center"
       >
+        <h1 class="fw-bold">Welcome to Shuffle</h1>
+        <p class="my-4">
+          Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est
+          quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
+          Similique ea voluptatem. Esse doloremque accusamus repellendus
+          deleniti vel. Minus et tempore modi architecto.
+        </p>
+        <router-link to="/about"
+          ><base-button>Get Started</base-button></router-link
+        >
+      </div>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
-
 section {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url(../images/slide-3.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  .bg-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.505);
+  }
+  .container {
+    z-index: 15;
+    h1 {
+      font-size: 46px;
+    }
+  }
 }
-
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 44px;
-}
-
-img {
-  width: 60%;
-}
-
-// a {
-//   text-decoration: none;
-//   background: transparent;
-//   border: 1px solid transparent;
-//   cursor: pointer;
-//   color: white;
-//   padding: 0.5rem 1.5rem;
-//   display: inline-block;
-// }
-
-// a:hover,
-// a:active,
-// a.router-link-active {
-//   color: #f1a80a;
-//   border-color: #f1a80a;
-//   background-color: #1a037e;
-// }
 </style>

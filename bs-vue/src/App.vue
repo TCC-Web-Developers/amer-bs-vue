@@ -1,12 +1,8 @@
 <script setup>
 import { RouterView } from "vue-router";
-import TheNav from "./components/layout/TheNav.vue";
-// import LandingPage from "./views/LandingPage.vue";
 </script>
 
 <template>
-  <TheNav />
-
   <RouterView />
 </template>
 
@@ -18,7 +14,6 @@ import TheNav from "./components/layout/TheNav.vue";
 body {
   font-family: "Roboto", sans-serif;
 }
-
 h1,
 h2,
 h3,
