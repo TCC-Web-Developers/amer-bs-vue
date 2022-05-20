@@ -1,7 +1,8 @@
 <script setup>
 import TheNav from "../components/layout/TheNav.vue";
 import BaseTitle from "../components/UI/base-title.vue";
-import BaseCard from "../components/UI/base-card.vue";
+import serviceCard from "../components/organisms/service-card.vue";
+// import BaseCard from "../components/UI/base-card.vue";
 import { BIconDribbble } from "bootstrap-icons-vue";
 import { BIconFileEarmark } from "bootstrap-icons-vue";
 import { BIconSpeedometer2 } from "bootstrap-icons-vue";
@@ -23,41 +24,46 @@ import { BIconGlobe } from "bootstrap-icons-vue";
       </BaseTitle>
 
       <div class="row g-3">
-        <BaseCard>
-          <template #card-img><BIconDribbble /></template>
-          <template #card-title>Lorem Ipsum</template>
-          <template #card-text
-            >Voluptatum deleniti atque corrupti quos dolores et quas molestias
-            excepturi</template
-          >
-        </BaseCard>
-        <BaseCard>
-          <template #card-img><BIconFileEarmark /></template>
-          <template #card-title>Sed ut perspiciatis</template>
-          <template #card-text
-            >Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore</template
-          >
-        </BaseCard>
-        <BaseCard>
-          <template #card-img><BIconSpeedometer2 /></template>
-          <template #card-title>Magni Dolores</template>
-          <template #card-text
-            >Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia</template
-          >
-        </BaseCard>
-        <BaseCard>
-          <template #card-img><BIconGlobe /></template>
-          <template #card-title>Nemo Enim</template>
-          <template #card-text
-            >At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis</template
-          >
-        </BaseCard>
+        <div class="col-lg-3 col-md-6">
+          <serviceCard :serviceIcon="BIconDribbble">
+            <template #card-title>Lorem Ipsum</template>
+            <template #card-text
+              >Voluptatum deleniti atque corrupti quos dolores et quas molestias
+              excepturi</template
+            >
+          </serviceCard>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <serviceCard :serviceIcon="BIconFileEarmark">
+            <template #card-title>Sed ut perspiciatis</template>
+            <template #card-text
+              >Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore</template
+            >
+          </serviceCard>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <serviceCard :serviceIcon="BIconSpeedometer2">
+            <template #card-title>Lorem Ipsum</template>
+            <template #card-text
+              >Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia</template
+            >
+          </serviceCard>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <serviceCard :serviceIcon="BIconGlobe">
+            <template #card-title>Nemo Enim</template>
+            <template #card-text
+              >At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis</template
+            >
+          </serviceCard>
+        </div>
       </div>
     </div>
   </section>
 </template>
-
-<style lang="scss" scoped></style>
