@@ -27,6 +27,7 @@ const menuToggler = () => {
 </template>
 
 <style lang="scss" scoped>
+@import "../../assets/scss/custom.scss";
 .menu-btn,
 .close-btn {
   display: none;
@@ -37,7 +38,7 @@ nav {
   .navbar {
     justify-content: space-between;
     h2 {
-      color: #1bbca3;
+      color: $primary;
     }
     a {
       text-decoration: none;
@@ -71,7 +72,7 @@ nav {
   }
   .close-btn {
     position: fixed;
-    color: red;
+    color: $red;
     font-size: 26px;
     top: 25px;
     right: 25px;

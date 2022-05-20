@@ -11,7 +11,8 @@ import { RouterView } from "vue-router";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
-body {
+body,
+span {
   font-family: "Roboto", sans-serif;
 }
 h1,
