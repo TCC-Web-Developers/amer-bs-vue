@@ -25,6 +25,11 @@ const router = createRouter({
       name: "portfolio",
       component: () => import("../views/PortfolioPage.vue"),
     },
+    {
+      path: "/team",
+      name: "team",
+      component: () => import("../views/TeamPage.vue"),
+    },
   ],
 });
 

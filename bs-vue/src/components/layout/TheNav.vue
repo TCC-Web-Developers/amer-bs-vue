@@ -18,8 +18,8 @@ const menuToggler = () => {
           <router-link to="/about">About Us</router-link>
           <router-link to="/service">Services</router-link>
           <router-link to="/portfolio">Portfolio</router-link>
-          <a href="#">Team</a>
-          <a href="#">Contact</a>
+          <router-link to="/team">Team</router-link>
+          <!-- <a href="#">Contact</a> -->
         </div>
       </div>
     </div>
@@ -69,6 +69,7 @@ nav {
     // animation: menuBtn 1s infinite;
     padding: 5px;
     cursor: pointer;
+    z-index: 10;
   }
   .close-btn {
     position: fixed;
