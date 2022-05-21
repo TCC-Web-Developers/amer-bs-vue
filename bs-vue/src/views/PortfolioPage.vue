@@ -1,3 +1,33 @@
+<!-- <script setup>
+import { ref, computed } from "vue";
+
+import TheNav from "../components/layout/TheNav.vue";
+import BaseTitle from "../components/UI/base-title.vue";
+import PortfolioAll from "../components/portfolio-all.vue";
+import PortfolioApp from "../components/portfolio-app.vue";
+import PortfolioCard from "../components/portfolio-card.vue";
+import PortfolioWeb from "../components/portfolio-web.vue";
+
+let selectedComponent = ref("portfolio-all");
+
+let AllBtn = computed(() => {
+  return { active: selectedComponent.value === "portfolio-all" };
+});
+let AppBtn = computed(() => {
+  return { active: selectedComponent.value === "portfolio-app" };
+});
+let CardBtn = computed(() => {
+  return { active: selectedComponent.value === "portfolio-card" };
+});
+let WebBtn = computed(() => {
+  return { active: selectedComponent.value === "portfolio-web" };
+});
+
+const setSelectedComponent = (cmp) => {
+  selectedComponent.value = cmp;
+};
+</script> -->
+
 <script>
 import TheNav from "../components/layout/TheNav.vue";
 import BaseTitle from "../components/UI/base-title.vue";
